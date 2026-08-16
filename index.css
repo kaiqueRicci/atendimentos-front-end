@@ -18,7 +18,7 @@ body{
   width: 100%;
   max-width: 588px;
   min-height: 700px;
-  margin: 0 auto;
+  margin: 0 auto ;
   padding: 24px;
   border-radius: 10px;
   background: rgba(15, 23, 42, 0.75);
@@ -56,6 +56,7 @@ body{
   padding: 10px;
   border-radius: 20px;
   font-size: 15px;
+  width: 100%;
 }
 
 .container form .wrapper .question i{
@@ -83,6 +84,41 @@ body{
 .container #response {
   margin-top: 30px;
   text-align: justify;
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px; 
+  }
+
+  .container form h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .container form .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .container form .wrapper .question input {
+    padding: 10px 12px;
+    font-size: 14px;
+  }
+
+  .container form .wrapper .question i {
+    font-size: 18px;
+  }
+
+  .container form .wrapper .submit input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 
 
